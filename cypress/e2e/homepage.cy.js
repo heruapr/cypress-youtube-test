@@ -13,6 +13,7 @@ describe('End-to-End Test Case: YouTube Homepage', () => {
     HomePage.thumbnailTitle.should('be.visible');
     HomePage.thumbnailUsername.should('be.visible');
     HomePage.thumbnailUploadDate.should('be.visible');
+    HomePage.thumbnailViewCount.should('be.visible');
     HomePage.menuButton.click();
     HomePage.trendingCategory.should('be.visible');
     HomePage.trendingCategory.click();

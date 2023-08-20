@@ -49,15 +49,15 @@ class HomePage {
   }
 
   get thumbnailUsername() {
-    return this.videoThumbnail.next().next().get('#meta > ytd-video-meta-block > #metadata > #byline-container > #channel-name');
+    return this.videoThumbnail.children().next().next().children('#meta').children().next().children('#metadata').children('#byline-container').children('#channel-name');
   }
 
   get thumbnailViewCount() {
-    return this.videoThumbnail.next().next().get('#meta > ytd-video-meta-block > #metadata > #metadata-line > span:nth-child(3)');
+    return this.videoThumbnail.children().next().next().get('#meta > ytd-video-meta-block > #metadata > #metadata-line > span:nth-child(3)');
   }
 
   get thumbnailUploadDate() {
-    return this.videoThumbnail.next().next().get('#meta > ytd-video-meta-block > #metadata > #metadata-line > span:nth-child(4)');
+    return this.videoThumbnail.children().next().next().get('#meta > ytd-video-meta-block > #metadata > #metadata-line > span:nth-child(4)');
   }
 }
 
